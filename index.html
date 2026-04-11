@@ -46,6 +46,18 @@
             const [mode, setMode] = useState('PvE');
 // TAMBAHKAN BARIS INI: Untuk mengontrol pop-up Labyrinth
             const [isMapOpen, setIsMapOpen] = useState(false);
+
+// --- TAMBAHKAN KODE INI UNTUK MENGUNCI SCROLL LATAR BELAKANG ---
+            useEffect(() => {
+                if (isMapOpen) {
+                    document.body.style.overflow = 'hidden'; // Kunci scroll belakang
+                } else {
+                    document.body.style.overflow = 'unset';  // Lepas kunci
+                }
+                // Cleanup saat pop-up ditutup
+                return () => { document.body.style.overflow = 'unset'; };
+            }, [isMapOpen]);
+            // ---------------------------------------------------------------
             
             const [stats, setStats] = useState({
                 atk: 6334, refineAtk: 639, pdmg: 83.09, dmgToEle: 0, skillDmgInc: 0, 
@@ -225,33 +237,42 @@
                         </div>
                     </div>
 
-{/* ===== POP-UP LABYRINTH MAP ===== */}
+{/* ===== POP-UP LABYRINTH MAP (VERSI PERBAIKAN) ===== */}
                     {isMapOpen && (
                         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm" onClick={() => setIsMapOpen(false)}>
-                            {/* Kotak Map */}
-                            <div className="relative bg-slate-900 border border-slate-700 rounded-2xl p-5 max-w-2xl w-full shadow-2xl" onClick={e => e.stopPropagation()}>
-                                <button onClick={() => setIsMapOpen(false)} className="absolute top-4 right-5 text-2xl text-slate-400 hover:text-rose-500 transition-colors">
+                            
+                            {/* Kotak Map: Ditambah max-h-[90vh] dan overflow-y-auto agar scroll ada di DALAM kotak */}
+                            <div className="relative bg-slate-900 border border-slate-700 rounded-2xl p-5 max-w-lg w-full shadow-2xl max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
+                                
+                                <button onClick={() => setIsMapOpen(false)} className="absolute top-4 right-5 text-2xl text-slate-400 hover:text-rose-500 transition-colors z-10">
                                     ✖
                                 </button>
                                 
-                                <h3 className="text-xl font-bold text-amber-400 mb-4 flex items-center gap-2">
+                                <h3 className="text-xl font-bold text-amber-400 mb-4 flex items-center gap-2 pr-8">
                                     🗺️ Guide Labyrinth Forest 1F
                                 </h3>
                                 
-                                {/* Ganti LINK_GAMBAR_KAMU dengan URL gambar map yang sudah kamu upload ke Discord/Imgur/dsb */}
-                                <img src="https://media.discordapp.net/attachments/1478401260553240648/1491669480651231282/image.png?ex=69db2bf6&is=69d9da76&hm=82805751c3e0ae52d95ac3dd455a9653c24cb7cde4b561f74d2df4374e594db6&=&format=webp&quality=lossless&width=655&height=930" alt="Labyrinth Map" className="w-full rounded-xl border border-slate-700 shadow-inner" />
+                                {/* Tempat Gambar: Dibikin lebih proporsional dan tidak pecah */}
+                                <div className="flex justify-center bg-slate-950/50 rounded-xl border border-slate-700/50 p-2 mb-4">
+                                    <img 
+                                        src="LINK_GAMBAR_KAMU" 
+                                        alt="Labyrinth Map" 
+                                        className="w-full max-h-[50vh] object-contain rounded-lg" 
+                                    />
+                                </div>
                                 
-                                <div className="mt-4 p-4 bg-slate-950/50 rounded-xl border border-slate-700/50">
+                                <div className="p-4 bg-slate-950/50 rounded-xl border border-slate-700/50">
                                     <p className="text-sm font-bold text-emerald-400 mb-2">🚀 Rute Cepat ke 2F (Pilih Salah Satu):</p>
-                                    <div className="flex flex-col gap-1">
-                                        <p className="font-mono font-bold text-amber-200 bg-slate-800 px-3 py-1.5 rounded-lg w-fit">⭐ 1 ➔ 16 ➔ 3 ➔ 13 ➔ 8 ➔ 7</p>
-                                        <p className="font-mono font-bold text-amber-200 bg-slate-800 px-3 py-1.5 rounded-lg w-fit">⭐ 1 ➔ 16 ➔ 6 ➔ 14 ➔ 8 ➔ 7</p>
+                                    <div className="flex flex-col gap-2">
+                                        <p className="font-mono font-bold text-amber-200 bg-slate-800 px-3 py-1.5 rounded-lg w-fit text-sm">⭐ 1 ➔ 16 ➔ 3 ➔ 13 ➔ 8 ➔ 7</p>
+                                        <p className="font-mono font-bold text-amber-200 bg-slate-800 px-3 py-1.5 rounded-lg w-fit text-sm">⭐ 1 ➔ 16 ➔ 6 ➔ 14 ➔ 8 ➔ 7</p>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     )}
-                    {/* ================================ */}
+                    {/* =================================================== */}
 
                     {/* FOOTER */}
                     <div className="mt-16 text-center pb-8">
