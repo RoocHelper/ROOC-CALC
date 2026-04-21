@@ -34,13 +34,15 @@ Copyright (c) 2026. All rights reserved.
         /* Animasi Transisi Halaman */
         .fade-in { animation: fadeIn 0.4s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes zoomIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+        .zoom-in { animation: zoomIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
     </style>
 </head>
 <body class="text-slate-200 antialiased selection:bg-amber-500/30 selection:text-amber-200 min-h-screen relative overflow-x-hidden">
     
     <!-- TEMPATKAN KODE SANDI DARI OBFUSCATOR.IO DI BAWAH INI -->
     <script>
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('K.O=P(3,g,i,A,w){2 f=h.r(0,(i.Q-i.R)*(1-i.S/6));2 d=1;8(f>=T)d=0.U;a 8(f>=N)d=0.4;a 8(f>=V)d=0.5;a 8(f>=X)d=0.7;a 8(f>=Y)d=0.9;2 x=(3.Z*(g.11/6))+3.L+g.14;2 z=(i.16)?3.17:0;2 u=(1+(3.W/6)+(3.M/6))*(1+(3.C/6))*(1+(3.D/6))*(1+(3.B/6))*(1+(z/6))*(3.E/6);2 s=1,o=1,m=0;8(A===\'F\'){s=1+(3.G*0.H)}a{m=3.I-i.J;2 e=h.19(m);2 b=0;8(e>=13)b=0.18;a 8(e>=1m)b=0.15;a 8(e>=1z)b=0.12;a 8(e>=1y)b=0.10;a 8(e>=1x)b=0.1w;a 8(e>=1v)b=0.1u;a 8(e>=1t)b=0.1a;o=1+(b*h.1s(m))}2 v=1+((3.1r||0)/6);2 l=x*u*s*o*d*v;2 y=1.5+((3.1c||0)/6);2 p=l*y;2 j=0;2 c=0;8(w){c=(3.1o||6)/6;j=c>0?(1/c):0}a{2 t=g.1n*(1-(g.1b/6));j=g.1l+h.r(g.1k,t);c=j>0?(1/j):0}2 q=h.1j(6,h.r(0,3.1i||0))/6;2 k=(l*(1-q))+(p*q);2 n=k*c;1h{f,d,m,1f:o,l,p,k,1e:k*0.9,1B:k*1.1,1q:j,c,1d:l*c,1g:p*c,n,1p:n*0.9,1A:n*1.1}};',62,100,'||let|stats|||100||if||else|pvpMod|hps|penMult|absDiff|sisaDef|skill|Math|target|totalDelay|expectedHitDmg|damageNormal|pvpDiff|expectedDps|finalPvP|damageCrit|effectiveCritRate|max|finalPvE|gcdActual|statMult|penStatMult|isAutoAttack|baseDmg|critMult|appliedMvpDmg|mode|raceDmg|eleDmg|sizeDmg|eleWeakness|PvE|pveDmg|00012|pvpBonus|pvpReduc|window|refineAtk|dmgToEle|240|hitungDamageROOC|function|def|ignoreFlat|ignorePercent|360|35|120|pdmg|60|30|atk||multiplier||2100|flat||isBoss|mvpDmg||abs|04|gcdReduc|critDmg|dpsNormal|expectedHitMin|pvpMult|dpsCrit|return|critRate|min|cooldown|castTime|1800|globalCd|aspd|expectedDpsMin|delay|pen|sign|300|06|600|08|900|1200|1500|expectedDpsMax|expectedHitMax'.split('|'),0,{}))
+        eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('M.P=Q(6,h,f,v,y){2 g=i.s(0,(f.R-f.S)*(1-f.T/3));2 e=1;8(g>=U)e=0.V;a 8(g>=W)e=0.4;a 8(g>=O)e=0.5;a 8(g>=X)e=0.7;a 8(g>=Z)e=0.9;2 u=(6.11*(h.13/3))+6.14+h.17;2 x=(f.19||f.A===\'1a\'||f.A===Y)?6.N:0;2 B=(1+(6.F/3)+(6.E/3))*(1+(6.I/3))*(1+(6.K/3))*(1+(6.J/3))*(1+(x/3))*(6.L/3);2 q=1,n=1,m=0;8(v===\'G\'){q=1+(6.H*0.D)}a{m=6.C-f.1b;2 d=i.16(m);2 b=0;8(d>=1d)b=0.18;a 8(d>=1w)b=0.15;a 8(d>=1x)b=0.12;a 8(d>=1y)b=0.10;a 8(d>=1A)b=0.1z;a 8(d>=1v)b=0.1B;a 8(d>=1c)b=0.1C;n=1+(b*i.1D(m))}2 t=1+((6.1E||0)/3);2 k=u*B*q*n*e*t;2 w=1.5+((6.1u||0)/3);2 o=k*w;2 j=0;2 c=0;8(y){c=(6.1e||3)/3;j=c>0?(1/c):0}a{2 z=h.1s*(1-(h.1t/3));j=h.1r+i.s(h.1q,z);c=j>0?(1/j):0}2 r=i.1p(3,i.s(0,6.1o||0))/3;2 l=(k*(1-r))+(o*r);2 p=l*c;1n{g,e,m,1m:n,k,o,l,1l:l*0.9,1k:l*1.1,1j:j,c,1i:k*c,1h:o*c,p,1g:p*0.9,1f:p*1.1}};',62,103,'||let|100|||stats||if||else|pvpMod|hps|absDiff|penMult|target|sisaDef|skill|Math|totalDelay|damageNormal|expectedHitDmg|pvpDiff|finalPvP|damageCrit|expectedDps|finalPvE|effectiveCritRate|max|penStatMult|baseDmg|mode|critMult|appliedMvpDmg|isAutoAttack|gcdActual|id|statMult|pvpBonus|00012|dmgToEle|pdmg|PvE|pveDmg|eleDmg|raceDmg|sizeDmg|eleWeakness|window|mvpDmg|120|hitungDamageROOC|function|def|ignoreFlat|ignorePercent|360|35|240|60|undefined|30||atk||multiplier|refineAtk||abs|flat||isBoss|custom|pvpReduc|300|2100|aspd|expectedDpsMax|expectedDpsMin|dpsCrit|dpsNormal|delay|expectedHitMax|expectedHitMin|pvpMult|return|critRate|min|cooldown|castTime|globalCd|gcdReduc|critDmg|600|1800|1500|1200|08|900|06|04|sign|pen'.split('|'),0,{}))
     </script>
     <!-- ==================================================== -->
 
@@ -280,79 +282,82 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
         // --- KOMPONEN HALAMAN: HIDDEN QUESTS ---
         function HiddenQuestsPage() {
+            // State untuk modal lightbox gambar
+            const [selectedImage, setSelectedImage] = useState(null);
+
             // Data Hidden Quests Berdasarkan Kota
             const questData = [
                 {
                     location: "1. Prontera Hidden Quests",
                     quests: [
-                        { name: "Evil Spirit Detective", desc: "Periksa Papan Pengumuman (Bulletin Board).", img: "[Gambar Bulletin Board]" },
-                        { name: "Trapped High Wizard", desc: "Bicara dengan Seyren.", img: "[Gambar NPC Seyren]" },
-                        { name: "The Last Exorcism", desc: "Kumpulkan batu-batu aneh. Quest muncul saat kamu pergi ke pemakaman di mana batu tersebut berada.", img: "[Gambar Batu Makam]" },
-                        { name: "Child's Nightmare", desc: "Lewati Mailbox (kotak surat) dan berinteraksi dengannya.", img: "[Gambar Mailbox Prontera]" },
-                        { name: "Morocc Support Group", desc: "Periksa sebuah pot di pinggir jalan.", img: "[Gambar Pot Pinggir Jalan]" },
-                        { name: "Novice Adventurer Stella", desc: "Bicara dengan Stella di depan patung batu, lalu pilih opsi High-Five dengan \"Contact\".", img: "[Gambar NPC Stella]" },
-                        { name: "Ancient Stone Monument", desc: "Pungut/ambil pengumuman yang terjatuh.", img: "[Gambar Pengumuman Jatuh]" },
-                        { name: "Kelsie's Lament", desc: "Tekan/Tap Mailbox (kotak surat).", img: "[Gambar Mailbox Kedua]" },
-                        { name: "Missing Knights", desc: "Bicara dengan Messenger yang terluka di dekat Prontera West Gate.", img: "[Gambar Wounded Messenger]" },
-                        { name: "Rescue from the Forest", desc: "Bicara dengan Zinnia.", img: "[Gambar NPC Zinnia]" }
+                        { name: "Evil Spirit Detective", desc: "Periksa Papan Pengumuman (Bulletin Board).", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLjVVo-3ARKKzLfuuEIeIq35D459h9rs1I1UZEic_eUfG3TE83VbZ1C9Cr9vWIttIsF6lVkIEV_u9UqLi9IvyWQwyTmgMwftjXOwl5z8yi4RivNById7siLdZL01PsxGsx09KnmH8kliqxuRSYkGMnx9kB9gj2LNBba0HUF8eYuJNSFpcJhp0M5mv3/s1920/Screenshot_20221226-115747.png" },
+                        { name: "Trapped High Wizard", desc: "Bicara dengan Seyren.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFK5o7M5DTw_5rre2FNCQwEyzwUu5_VPpJazNGpmuIdjpID7X84p1aoB4rSKUrcs4j1ALnFkvKbA_JuR7DUEBeXOPM76od3_VtEvCYoLaZayCxDGn29KbNA56DgaS4LRJs_G2L3kTPqm44EWFjFP3IEcU4EZBIL4dQ8k4OacKgvYBBcx69-eoCnuoi/s1920/Screenshot_20221226-153431.png" },
+                        { name: "The Last Exorcism", desc: "Kumpulkan batu-batu aneh. Quest muncul saat kamu pergi ke pemakaman di mana batu tersebut berada.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEmx2qw5z1gNgKJUIK0NaaLG9S6ohj9f-gmpV8d5KWZXvTXrgdXREKq3RyvXmimrwSQ0k39sudOVyuXo-MybDQaPW60QmP-itZpU96wf_YA6u6bEf4BNvE8Wb1VtXWe6bsz7PCheFZiIpeqN1z39bBTH3FPd_SRaFlpN3agd9DtvYnWE36SAfFaLGg/s1920/Screenshot_20221226-122231.png" },
+                        { name: "Child's Nightmare", desc: "Lewati Mailbox (kotak surat) dan berinteraksi dengannya.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu5TGelJDC45Cr8DWYW_sveso_zIjdhAnHKllFgmT2aBH8UJ4e5WwkVHSsLaLKuKa5F-N5BpYQ9ghXnwD88vyXmasAW0Jwj7E2flYN0v-1K6dMLCjpZ4RsJ9bI4_knuUvMDFrFtEfCJTsfXS6rSeaeDnnr-wgK0Zsr9BT4zTxkUJKAh4F9oC-dnyJK/s1920/Screenshot_20221226-153152.png" },
+                        { name: "Morocc Support Group", desc: "Periksa sebuah pot di pinggir jalan.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwR8wZwbeNtVnDSx8zTuz0DPZPpmFCTI4QbhAQdGzMdHuKHIpzxunsoKwxdZdUSzt150Hrc_5qwyB6_4pUWeLVQnKQdS1oCadzna0YvF4-xIxPnznk-7y8GriYD2GrC6Y5vj1e3w6wzmJjOAPr0gjEOvpuTHeCgsrydNwFufi3MlDAKvqBCmK7sDlR/s1920/Screenshot_20221226-124332.png" },
+                        { name: "Novice Adventurer Stella", desc: "Bicara dengan Stella di depan patung batu, lalu pilih opsi High-Five dengan \"Contact\".", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuwWVDl8hMdQIV77wqscXJt6qog5QoPXLXXF3iB3OIdq6FxLo9J6VCr3A4gSlYCZYwb0Ttl3fLpvO88sTh10lgfUWE-zvYmUahfAOp8b5ygo0tTgEc29hDrcAiKdFM4lms2BN2opZTZepAJhcTUm9BswLdpsGbawf0Nc9hgZ_Ex2Desgs06jp4QgH9/s1920/Screenshot_20221226-130048.png" },
+                        { name: "Ancient Stone Monument", desc: "Pungut/ambil pengumuman yang terjatuh.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdP5gkhOov75G2LolbB8vTnPxAFU1BNo1txMhhPd6S9IqICl3VFpEucRv0T7BEYktVHqA-1jhjhV0skdxeOUoMPH-P5183FtgY5DSCozDQJ1IoHguiNWT5JNOPflOCUXMDqtmOnsug0oTUbLyi6Bsvqa_jlAuajkBAhJMJC3rbtgDoeU2mQJzE0xOT/s1920/Screenshot_20221226-131208.png" },
+                        { name: "Kelsie's Lament", desc: "Tekan/Tap Mailbox (kotak surat).", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGHCHQYqV8wV-yLem2Tcnetie99FqOP7l-PQfkzIupJHJccnJWSHELbDbOd1DPElZWRlk1A3CH3BmPXTKMVA9-d2x71MvtQGZbQ3To73L4_DuIk0avlj2ZDk0i_Vt7G1TgVk9t91Nca5QB5UMIj7PgPk29ncrLf5x3HbxqnMQVE2GT6OsZBV58xdc-/s1920/Screenshot_20221226-153152.png" },
+                        { name: "Missing Knights", desc: "Bicara dengan Messenger yang terluka di dekat Prontera West Gate.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhECU2xt1IupyWMzYrP0EQXKRE4dBbkHALXzJbpXoNkxPRqZYF6qonILMcGB0aDrRAynSQ2wCeTlW69jVWXnPzRi1nSwdyZ8UlWVKQk9TPCjmsuGzVePBU5ECY3Et1tWnWeR3BCLqPgIJNbK8spTDnS-E45_-awXmAW_a1HzDeHVxm39UcxHcQFAyD/s1920/Screenshot_20221227-012051.png" },
+                        { name: "Rescue from the Forest", desc: "Bicara dengan Zinnia.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBr4qRunOaXswZ1seTbTGbgWdyOtpfPM1U52CO_KCwxeb91vT_T-1jlmm00qHDYuC97YLPdEh6JbE37QUXb8D_WcvLxcJG_s935KTdhAY_ez7lDF2cvkafSW36UHe2TJuvraF3CJt6rsrv6AN2zp3Qeb6kvkCo0ymm1Gs9HN5d1-Mu0p0j7ya2TcVD/s1920/Screenshot_20221227-013429.png" }
                     ]
                 },
                 {
                     location: "2. Alberta's Hidden Quests",
                     quests: [
-                        { name: "Far Away Home", desc: "Ambil catatan yang terjatuh. Kalahkan Mimic yang menyamar untuk membuka kotak harta karun tersembunyi.", img: "[Gambar Mimic Menyamar]" }
+                        { name: "Far Away Home", desc: "Ambil catatan yang terjatuh. Kalahkan Mimic yang menyamar untuk membuka kotak harta karun tersembunyi.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7fT3-FMRw-RMudwq3Esz4GQTpr3Rudp8nSNEcxl3cnvEO1cNNN1P1DVzWnuSy5h2yx05v-mCiK5dTnp0xB7ujE7yJlGtSVxzm91FPwWFrJJGt20a62ym91A0iiTWd74g0zFyBIuugKhrBMcvAw9hXZkmswL8wLosmFMtx3YlNJ9CofS42Ba_M_GA7/s1920/Screenshot_20221227-083430.png" }
                     ]
                 },
                 {
                     location: "3. Izlude's Hidden Quests",
                     quests: [
-                        { name: "Lost Supplies", desc: "Bicara dengan anggota Knights (Knights Members).", img: "[Gambar Knights Members]" },
-                        { name: "Captain's Request", desc: "Bicara dengan Reindeer Captain dan pilih percakapan: \"Details\" -> \"If it's a message bottle\" -> \"Of course\". Syarat: Harus memiliki Message Bottle yang didapat secara acak dari memancing sebelumnya.", img: "[Gambar Reindeer Captain]" },
-                        { name: "Box of Youth", desc: "Ambil Mystery Box.", img: "[Gambar Mystery Box]" },
-                        { name: "Deep Sea Heart", desc: "Ambil Blueprint yang terjatuh (Dropped Blueprint).", img: "[Gambar Dropped Blueprint]" }
+                        { name: "Lost Supplies", desc: "Bicara dengan anggota Knights (Knights Members).", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4iZYgOyATxlu_g1YkOrLodgNr9oZfZAcLjEzJMw7MQAd8D3H5-BQAvhOqAwXVQRGhIQvf_58niqxJf2YrGcQq43kpy3vwCVq6i1sn8tSM-NcGNrx8id-uxUgP2JvAis1qScR1tL8d0qmqLxT2noE4AqbN-Ybq4_MaTYNsNk7XWchCYz_Aumz_nSNO/s1920/Screenshot_20221227-085037.png" },
+                        { name: "Captain's Request", desc: "Bicara dengan Reindeer Captain dan pilih percakapan: \"Details\" -> \"If it's a message bottle\" -> \"Of course\". Syarat: Harus memiliki Message Bottle yang didapat secara acak dari memancing sebelumnya.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsuYnLR37hf-fhg80VtrY8JkP8mECTKW1zYzY4zy9JEFyOCqd7adqUt780rzow3az13Dn1djIlQ_l2n2mzG8iSa987h6Yo_fOIFrSmEU2WeMYxO1hsZxeEg_z-PFa7V42RYUKeysrj0nLsKj1o7c4VSwewbJ5TWUby9ZLksvctk-C-O8iSHdkcEfbe/s1920/Screenshot_20221227-140415.png" },
+                        { name: "Box of Youth", desc: "Ambil Mystery Box.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdJ9h6833BXYw5QLFRWJ1y1TOGF5yDyY_vHb9jKv38w5SSvtG8NSpO-4FJzPUte7ECrIzW3NcK8mxqibeB6PeXsxDPgSu1CAp-gq6D9MxZwwplDrxv91DVz4NgMrIa-Y7rTlkecZEJBZ2gjwS1_oL9Ks0YJA8ROdte3qU6MhkQS_vrKaF0xSw9TDlJ/s1920/Screenshot_20221227-185636.png" },
+                        { name: "Deep Sea Heart", desc: "Ambil Blueprint yang terjatuh (Dropped Blueprint).", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVxn9XqxFlqCATDCmEyXH7_J7Lk1EbMC0_M6JTkvt0yrQqBBEJeYmi3xsrLLcVX3v-g2v72HtiWAdDAAtwR21dXloNguwDUcfeavUseTeqvz3MT_gy1V47AT562kT8hA7oS7aTvQYn8csQ7yBm_AJC6mVeQqa--d34zMr-tcd3W0z8tEyY2ZrBAND7/s1920/Screenshot_20221227-142636.png" }
                     ]
                 },
                 {
                     location: "4. Geffen's Hidden Quests",
                     quests: [
-                        { name: "Poet's War Song", desc: "Ambil secarik kertas di dekat gambar/lukisan.", img: "[Gambar Kertas di Geffen]" },
-                        { name: "Smokey's Secret Plan", desc: "Bicara dengan Impatient Magician.", img: "[Gambar Impatient Magician]" },
-                        { name: "Moekko Squad", desc: "Bicara dengan NPC Zenji yang muncul setelah memungut kertas gulung.", img: "[Gambar NPC Zenji]" },
-                        { name: "Fissure in the Ground", desc: "Kalahkan 3 Ghosts.", img: "[Gambar Lokasi Ghost]" },
-                        { name: "The Glory of the Dead", desc: "Bicara dengan Inspector.", img: "[Gambar NPC Inspector]" },
-                        { name: "Border Riot", desc: "Periksa Fallen Knight. Lokasi barang bukti tersebar di sekitar: Uniforms (Seragam), Broken Sword (Pedang Patah), dan Incomplete Experiment Report (Laporan Eksperimen).", img: "[Gambar Fallen Knight]" },
-                        { name: "Stray Cat's Morality", desc: "Pergi ke dekat Grimacing Merchant dan tekan \"Contact\". Lakukan High-Five lalu pilih opsi Comfort untuk melanjutkan cerita.", img: "[Gambar Grimacing Merchant]" },
-                        { name: "Monster Evolution Theory", desc: "Bicara dengan Curious Boy. Jawaban pilihan: 1. Active Monster: Drainiliar, 2. Non-Earth Attribute: Ant Egg, 3. Not MVP: Mastering.", img: "[Gambar Curious Boy]" }
+                        { name: "Poet's War Song", desc: "Ambil secarik kertas di dekat gambar/lukisan.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-TKGophqPdADI46YSwWrjl6EPjMKaOkW6O5mZ3HBKOOrDsZm9U4A_ZFXBCazt5lDPbDpkKUPJAfDDTuHw1a_DgMM87ce1eqWaysWqARNwpc3pHpnC30aA6TRB0HbersMgWCUd1Xh3ffFwYeAZjPZGM1QYDalVLeCJBb3DT73csFae72n79ijudI2v/s1920/Screenshot_20221228-001809.png" },
+                        { name: "Smokey's Secret Plan", desc: "Bicara dengan Impatient Magician.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvFJi2sIYhNOIJooNFL8BA8TG1S7ODUUewStI-f2qCysbeCAiUhuFazyT2-kcRcWaDQVjHfTzGofEhJxjh3qZz5C6H_Y-M-I8nkU9W1E1hVc-h2w7X0ocghfiBEX_V_bD_-lQW-C1Hj8TKlXHSyyBqWoWeFKFh5qqwhKndTqlAwUs0z0vj8nGbWx-2/s1920/Screenshot_20221228-003007.png" },
+                        { name: "Moekko Squad", desc: "Bicara dengan NPC Zenji yang muncul setelah memungut kertas gulung.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGTdigJmBsLZN9nv9mtrKXiiUhWQMlGcVr3OWglbJp0r8jeDrUGbPSZqLiFcJXIIi2PDCs6IjGADd3QczRihnEBoQ42xak0-kJ703gD0W1oC3qGNfRzy9rpc7XXqNqI0QQnHXiCzUUYLY4o20_Pv4Y8SOt2fq8QdIfthMQgR-OUPFICGbMnPa0yru8/s1920/Screenshot_20221228-081731.png" },
+                        { name: "Fissure in the Ground", desc: "Kalahkan 3 Ghosts.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixk4mCgQjfPWI2bbh9itF6WlkNafmeSI5WeImOKObyqqAkeM5J2TScwVpGKEmKTCJ0mNKpy1JW270ujDcBSyTEUE60EhjHcMXrMV0vtezz20A80dIv-GpUKf_bJ-vZ80o2abaWbXQSK6qiPVaOXx_dX6RIUzm2blTWg5WAUwjzPMUXF5V9zyz__tuC/s1920/Screenshot_20221230-234406.png" },
+                        { name: "The Glory of the Dead", desc: "Bicara dengan Inspector.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWw1rPqw14nLz5KCOMD1D2gAJsy5k2LC7uAuQEtu45fM6ETLt_2rbpIVT25MyR8R5-KEhkQPgTgQnV9q6Ss1OWqmWAK9sv2vmNLF14eABVYQvmwhg7zJyDzUswcDtdVSZg4hhOhfh8TJPQ4UDc17rluddF31_ju4aEgQYoZn02IcUxf8Vjmwu3_hZ5/s1920/Screenshot_20221228-083015.png" },
+                        { name: "Border Riot", desc: "Periksa Fallen Knight. Lokasi barang bukti tersebar di sekitar: Uniforms (Seragam), Broken Sword (Pedang Patah), dan Incomplete Experiment Report (Laporan Eksperimen).", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhm57FkfUiYjC2AD7e920FxcC83LZv0fHvmI5eaCkjgznDpRqa2UIIJlB9fSyy53krbIPpQOCYuBJcUzqubHMCP5Z7off5gZDuEa4LNi6a6j9-OUz9pmFWTfDO0g7moJNQjWcF7WVia7LDoEeAPM0HeDJXwnxK0idS8vECA8oeUjE5QOAV8RChwgPAX/s1920/Screenshot_20221229-080701.png" },
+                        { name: "Stray Cat's Morality", desc: "Pergi ke dekat Grimacing Merchant dan tekan \"Contact\". Lakukan High-Five lalu pilih opsi Comfort untuk melanjutkan cerita.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqcAqR9nPHxvyxlOzpdR2lStTmZmEyLNV1x6sdloDNuJO5bStkFRBFqw1651kiDb-2GIifkdj6ZjRLHfE7PeSNi_nvtuFjL1i1ormvmfANj8N5fwfj0jzYS4ubHXl05mncS1eCeuVMagMSC02CYt0-eCCOfCiYD6ki2SZT0KLDuDM9QpuyxYX_Zbfv/s1920/Screenshot_20221229-082715.png" },
+                        { name: "Monster Evolution Theory", desc: "Bicara dengan Curious Boy. Jawaban pilihan: 1. Active Monster: Drainiliar, 2. Non-Earth Attribute: Ant Egg, 3. Not MVP: Mastering.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEga7gxTrrAeWZsj7ss2TRYb8pvIx5c0tc5BeMjlNMUH-DUu2UTVNHrna0Z0K9jxxocQHze1T5HeZkTYRasYeD_RTbzLf1eyOIoqi1uvSLqhW8nWO_foVTRJ64ioIepzmAvvrSDyCHhq0bwKi7_qied9nhkHKDaMD8Yp1Nvir0XeOqYYuVPiukEJfIAm/s1920/Screenshot_20221229-083816.png" }
                     ]
                 },
                 {
                     location: "5. Payon's Hidden Quests",
                     quests: [
-                        { name: "Monster Encyclopedia", desc: "Bicara dengan NPC June.", img: "[Gambar NPC June]" },
-                        { name: "The Danger of the Cave", desc: "Ambil secarik kertas di dekat gambar/lukisan.", img: "[Gambar Secarik Kertas Payon]" },
-                        { name: "Storm of Savage", desc: "Bicara dengan Warden.", img: "[Gambar NPC Warden]" },
-                        { name: "Greatest General", desc: "Kalahkan monster Beetle yang menyerang desa.", img: "[Gambar Monster Beetle]" },
-                        { name: "Poetry of the Four Seasons", desc: "Ambil beberapa foto di sekitar Peko Peko. Saat mengambil foto, seorang Old Traveler akan bicara padamu dan memicu quest.", img: "[Gambar Spot Foto Peko Peko]" },
-                        { name: "Miko's Love", desc: "Bicara dengan Shrine Maiden.", img: "[Gambar Shrine Maiden]" },
-                        { name: "Magic Necklace", desc: "Bicara dengan NPC Geho.", img: "[Gambar NPC Geho]" },
-                        { name: "Multi Worker", desc: "Bicara dengan Anseville lalu Nod (Mengangguk) > Pilih \"Wow\".", img: "[Gambar NPC Anseville]" },
-                        { name: "Sealed Memory", desc: "Bicara dengan Cowardly Magician. Urutan jawaban teka-teki: Blue > Red (Pilih Red 2x hingga berubah ungu) > Green > Kuning (Selesai).", img: "[Gambar Cowardly Magician]" },
-                        { name: "Legend of Singing Grass", desc: "Periksa Singing Grass dan kalahkan Earthbound Spirit.", img: "[Gambar Singing Grass]" }
+                        { name: "Monster Encyclopedia", desc: "Bicara dengan NPC June.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqHYV2gEY4jAMCHZQ5p-QOPo_Sr-CY4SIROotD3w-IYYBtFgu-MD_idnmbhbjCvSzqYrseZpCJMfFxQUlWXXsb5d0UKP3gD-wv78hXW13Wbc096DxCcwej_NyJoxGb1TGnUfcn8c4zJP9xJ7NfauRHQri3rVjIaoF0_yycEGFhZlqNOAQWR8UdOYQn/s1920/Screenshot_20221229-190324.png" },
+                        { name: "The Danger of the Cave", desc: "Ambil secarik kertas di dekat gambar/lukisan.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjELwKQjl_eEzaZcldfkJDasf2rIJpmTkOMq-KxwtaH4-_y27cmbbzIvKvPgHMs75uCvNwQIK9VTL5JfA39hlUISQ8jfqi72wg_YbTRNGo40nywz41QtGMBadd-E8TR9R3Q9D8ZLco6ZMr66y-8xcuKlduO-AmMv6SUbNwZu6t0kpLt-6fRdy6E8uj5/s1920/Screenshot_20221229-192857.png" },
+                        { name: "Storm of Savage", desc: "Bicara dengan Warden.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSJGXvAl0STZkwg4wroMGj6UBbg6eFg9N9YE0xq02Qy_FH-GCw2wP8HHbvWlfXdm9Gsp5CikSEtSUBdhx2y_sSnwKI6-e6UdbcKgUSeZxhu2RZRziyTWVTTaXAWr0V8AYpTTJzyOOA3_z8sc7sy8Q7bK4xeoe0IVkv195T9M3tL1kuRmhnTFWouMp9/s1920/Screenshot_20221229-191935.png" },
+                        { name: "Greatest General", desc: "Kalahkan monster Beetle yang menyerang desa.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2uZE4x3Y6ZLy5ybwDY7TeO3QDgocxzmiFYoEj6Zg9fQmoysLKohdYwRFc9xupCeI9iwV1T_3dC_lOinUbxbIMy_5oMs1X9QNYL7A4c_HxEzy_cH__7OzhzV2hPuYCdEI3_6KNeG3kAIUR1OXb__5uIAw8bAHw2ngdh7LsgXg04Q-ndUfWRW7rt7lD/s1920/Screenshot_20221229-193750.png" },
+                        { name: "Poetry of the Four Seasons", desc: "Ambil beberapa foto di sekitar Peko Peko. Saat mengambil foto, seorang Old Traveler akan bicara padamu dan memicu quest.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDTXW7wIxz3AJOWUz2i6wLtu2IRXl4VmGIz_hIBm5W4Okd7OEW8STY4ShSZ_zSxCgiYFYK1hcBbAM5ZaV17tekxPKsLmcNblJ9XxqyFzGy-T7Y7xsGC98vbFIcjmZZUnM1EJPyRN7hvbdyoT4ycHYdfjI8ckbk-Nqr9B47HKr3c5mmyHMkt64c1u_6/s1920/Screenshot_20221229-194509.png" },
+                        { name: "Miko's Love", desc: "Bicara dengan Shrine Maiden.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrDdXXmYh2TmFoZM6HM8FeOoAA6N3AdH5HRZ-euD0_Pm2c5q5t78DEdvENf-U24Tk8LljETAGZZYnCqvRHMdSNsJHG8fYk1lNcXPi0hycJTOPa1JiQxM50K1TBig3AvWceuUQsliWBWC-zeDWZTxqN-Ta2ciicPKeIjLftBngjtMpbS0XPfRlKg4T_/s1920/Screenshot_20221229-231855.png" },
+                        { name: "Magic Necklace", desc: "Bicara dengan NPC Geho.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEjoEdwkHargCD0CGpreUcmrlHtwAC8YIoB2uc74U3aklxzRTYFOKr2z6-P4KfBeIb_JULJ4Po_nDe2_EkkhwoREcDQYZgrxxQXi08l7ZpSpeyB49m47xcm8xV_3spA1SJKn7K8xRyjKhAErpLdA-tyZjt2cHidWBkFdId3JgGdt_MvUl87fDyGyje/s1920/Screenshot_20221229-234442.png" },
+                        { name: "Multi Worker", desc: "Bicara dengan Anseville lalu Nod (Mengangguk) > Pilih \"Wow\".", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL1KwPTEqVLmabHvkmD6TZBPVagLN-FInR8VFEQPSH5iuSL1-u6prGrWY6oIIPpfKrZTtgvwaDvSripXW9l91xiRFRYzyoVR7pMVXCtluY6JC-FzAxyocZWqawpMU348GxrX-9R79ABlh4BNJn3YkMkC2Ue4M2e08dqSOS9_tHTSbYVKhCBVjyqEf0/s1920/Screenshot_20221229-235241.png" },
+                        { name: "Sealed Memory", desc: "Bicara dengan Cowardly Magician. Urutan jawaban teka-teki: Blue > Red (Pilih Red 2x hingga berubah ungu) > Green > Kuning (Selesai).", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFXF42vA5S6x23X5sA_ep-pdrE3-PpRPvGneMZvQWs7Gu0_qVB3VWY-TNmgZJxI_JyE4mFea2Rp45dggOuI2sOA-ZmVn1WaWNmmJJj2Uw7IMjQ3n_gygu-ftuUlmyB1t6SYuIYZdSbB-xEZnkVAJEc1TnKGYkSvIWqjAzQ5gGDx6Z-tS28KjW_lgnu/s1920/Screenshot_20221230-000309.png" },
+                        { name: "Legend of Singing Grass", desc: "Periksa Singing Grass dan kalahkan Earthbound Spirit.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjypGlbWdA0ClLb1a70Cq1VsdyyZrTIsdBaAHLjSr-HyboisBte4tq9KSB1uKZZBBCZ57PtkcraO0lemUQCFlOCOv3GdvEom0Gbw9GeNfZB_8canYdcvo04VlRHnIW0OPi27jREkhYy3Md4BZcYGKv6w6KRkoAarGX28jaZ9frLgnlTecMncyEQOrN-/s1920/Screenshot_20221230-001534.png" }
                     ]
                 },
                 {
                     location: "6. Morroc's Hidden Quests",
                     quests: [
-                        { name: "Magnolia Spirit", desc: "Ambil kertas kusut (Crumpled Paper).", img: "[Gambar Crumpled Paper]" },
-                        { name: "Assassination Blade", desc: "Ambil resep senjata misterius yang memecahkan toples/jar.", img: "[Gambar Toples Pecah]" },
-                        { name: "True Traveler", desc: "Bicara dengan NPC Tachius.", img: "[Gambar NPC Tachius]" },
-                        { name: "Treasure Diary", desc: "Bicara dengan Treasure Hunter.", img: "[Gambar Treasure Hunter]" }
+                        { name: "Magnolia Spirit", desc: "Ambil kertas kusut (Crumpled Paper).", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbje2Z_qmrg2BF4bsKI2G2XRThu9fxGFfWgEK-93fyI0yS4kz0za6qsyKa7UjQgye2w4F6CsN5vnUDc-ICC-DsA2PRqCVLnB_6BeJBIRIO0TU6dIm1k8i3yDb0wLZY4o2jRUfbijirQdI51CERrPW2dNpU9oFj-1dyVcg-FcGfb0L04P59WnSFvFoy/s1920/Screenshot_20221230-002733.png" },
+                        { name: "Assassination Blade", desc: "Ambil resep senjata misterius yang memecahkan toples/jar.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4ErayZaImgw049VgQoWhr53ZOk32Ly8xy450JoUCJnZVyJjkvmQUC0nzmrlNSQNQE7ocPHSTzEv3LmUpfPPfxUNCKKXDmWrddmw13Yju2BKsufHyRjXNUKnlnEJUOKiONsEzFHcAEZ3NVLK-FRvH6Yo7szX8oLyLpk5JK9OKVMVPgffPk07NQATcy/s1920/Screenshot_20221230-004707.png" },
+                        { name: "True Traveler", desc: "Bicara dengan NPC Tachius.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieC4nuEM2olRwKr27JYFbv-rUx5PR21Tv5nPMAkJUyuYXOnTa38j7_yelO_YbFj76ot28E_nxNwxBoyE2E-3PA0ddaKla6ojxR4Cj9Q1gSazArBy1bbVCks_Dcpvc6m0W5Zd5Diw2kFMLqGesUmLS6r72hPFPOKQbd0ytYH8aY9UVwB3LH4gzWggoT/s1920/Screenshot_20221230-003706.png" },
+                        { name: "Treasure Diary", desc: "Bicara dengan Treasure Hunter.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDqNt6IIkHKt5bPgQGe64odqExkdrcEXNtKfJW5xuG5XSCqjRkQNkfLQSImgFsP_x7YFN8OBKQN7vsag-bPx7ejg6IrzF2qNbsp-rwBchvpePiakv3b6OH3K2j5Qo6Cv3AX162yYkQllstqKdW2Sp8-6Yx6KuScjUFBYzB1hET7Vko9CilYOLSLl-c/s1920/Screenshot_20221230-093947.png" }
                     ]
                 },
                 {
                     location: "7. Glast Heim Hidden Quests",
                     quests: [
-                        { name: "The Last Champion", desc: "Quest akan muncul saat kamu berada di dekat NPC Bishop. Syarat: Minimal Base Level 97.", img: "[Gambar NPC Bishop]" }
+                        { name: "The Last Champion", desc: "Quest akan muncul saat kamu berada di dekat NPC Bishop. Syarat: Minimal Base Level 97.", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisSjvrvYpceI0KoRxUKILANRoVjBzLEEU7B6iHQD_knCEEGOIOKHNEKGcw_AV2o3ATPEYeHOCMiCaMzA-G4h4PS_8AqhdldsAks_XkGGOYjbpN3WEMJgg2lJk5onNE6RIqI0wgGtdUIrSoPqVq-CihKw6ADmopvg1BYXrgzsTMMJRwHGeVbvGCm39w/s1920/Screenshot_20221231-003524.png" }
                     ]
                 }
             ];
@@ -398,35 +403,59 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
             ];
 
             return (
-                <div className="fade-in max-w-5xl mx-auto pb-24 px-4 sm:px-6 lg:px-8 mt-6">
+                <div className="fade-in max-w-5xl mx-auto pb-24 px-4 sm:px-6 lg:px-8 mt-6 relative">
                     <div className="bg-slate-900/80 p-6 sm:p-8 rounded-3xl border border-indigo-500/30 shadow-2xl backdrop-blur-xl mb-12 relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 blur-[80px] rounded-full pointer-events-none"></div>
                         
-                        <h2 className="text-3xl font-black text-indigo-400 drop-shadow-[0_0_10px_rgba(99,102,241,0.5)] mb-2 flex items-center gap-3">
-                            <span className="text-4xl">📜</span> Hidden Quests Guide
-                        </h2>
-                        <p className="text-slate-400 font-medium">Temukan Misi Rahasia berdasarkan wilayah (kota) untuk mendapatkan ekstra EXP dan hadiah langka!</p>
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-4">
+                            <div>
+                                <h2 className="text-3xl font-black text-indigo-400 drop-shadow-[0_0_10px_rgba(99,102,241,0.5)] mb-2 flex items-center gap-3">
+                                    <span className="text-4xl">📜</span> Hidden Quests Guide
+                                </h2>
+                                <p className="text-slate-400 font-medium text-sm">Temukan Misi Rahasia berdasarkan wilayah (kota) untuk mendapatkan ekstra EXP dan hadiah langka!</p>
+                            </div>
+                            <div className="bg-slate-950/50 p-3 rounded-xl border border-indigo-500/20 shadow-inner flex flex-col items-center justify-center shrink-0">
+                                <span className="text-slate-500 text-[10px] uppercase tracking-widest mb-1 block font-bold">Author & Source</span>
+                                <span className="text-indigo-300 text-xs font-medium">Written by <strong className="text-indigo-400">Mumei #4529</strong></span>
+                                <span className="text-slate-400 text-[10px] italic">from ROO Discord Tavern</span>
+                            </div>
+                        </div>
                         
-                        <div className="mt-10 space-y-8 relative z-10">
+                        <div className="mt-8 space-y-6 relative z-10">
                             {questData.map((section, idx) => (
                                 <div key={idx} className="bg-slate-950/60 rounded-2xl border border-slate-700/50 overflow-hidden shadow-lg">
-                                    <div className="bg-gradient-to-r from-indigo-900/60 to-transparent p-4 border-b border-slate-700/50">
-                                        <h3 className="text-xl font-bold text-indigo-300 tracking-wide">⭐ {section.location}</h3>
+                                    <div className="bg-gradient-to-r from-indigo-900/60 to-transparent p-3 sm:p-4 border-b border-slate-700/50">
+                                        <h3 className="text-lg sm:text-xl font-bold text-indigo-300 tracking-wide">⭐ {section.location}</h3>
                                     </div>
-                                    <div className="p-0 grid grid-cols-1 md:grid-cols-2">
+                                    <div className="p-0 flex flex-col">
                                         {section.quests.map((q, qIdx) => (
-                                            <div key={qIdx} className={`p-5 flex flex-col hover:bg-slate-800/30 transition-colors border-slate-800/50 ${qIdx % 2 !== 0 ? 'md:border-l' : ''} ${qIdx < section.quests.length - (section.quests.length % 2 === 0 ? 2 : 1) ? 'border-b' : ''}`}>
-                                                <div className="mb-4">
-                                                    <div className="bg-slate-900 rounded-xl border border-slate-700 aspect-video flex items-center justify-center text-slate-500 text-xs italic p-4 text-center overflow-hidden shadow-inner relative group">
-                                                        {/* Tempat Gambar */}
-                                                        {q.img}
-                                                        <div className="absolute inset-0 bg-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                                    </div>
+                                            <div key={qIdx} className={`p-4 sm:p-5 flex flex-row gap-4 hover:bg-slate-800/30 transition-colors border-slate-800/50 ${qIdx < section.quests.length - 1 ? 'border-b' : ''}`}>
+                                                
+                                                {/* KOTAK GAMBAR KIRI */}
+                                                <div className="w-24 h-24 sm:w-32 sm:h-32 shrink-0">
+                                                    {q.img && q.img !== "" ? (
+                                                        <div 
+                                                            className="w-full h-full bg-slate-900 rounded-xl border border-slate-600 overflow-hidden shadow-inner cursor-pointer relative group transition-all hover:border-indigo-400 hover:shadow-[0_0_15px_rgba(99,102,241,0.3)]"
+                                                            onClick={() => setSelectedImage(q.img)}
+                                                        >
+                                                            <img src={q.img} alt={q.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                                            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                                                <span className="text-white text-[10px] uppercase font-bold tracking-widest">Perbesar</span>
+                                                            </div>
+                                                        </div>
+                                                    ) : (
+                                                        <div className="w-full h-full bg-slate-900/50 rounded-xl border border-slate-700 border-dashed flex flex-col items-center justify-center text-slate-500 shadow-inner p-2">
+                                                            <span className="text-2xl mb-1 opacity-50">🖼️</span>
+                                                            <span className="text-[9px] text-center uppercase tracking-widest">No Image</span>
+                                                        </div>
+                                                    )}
                                                 </div>
-                                                <div className="flex flex-col flex-grow">
-                                                    <h4 className="text-lg font-bold text-amber-400 mb-2">{q.name}</h4>
-                                                    <p className="text-slate-300 text-sm mb-4 leading-relaxed flex-grow">
-                                                        <strong className="text-slate-400 text-xs uppercase tracking-wider block mb-1">Kondisi / Trigger:</strong>
+
+                                                {/* DESKRIPSI KANAN */}
+                                                <div className="flex flex-col flex-grow justify-center">
+                                                    <h4 className="text-base sm:text-lg font-bold text-amber-400 mb-1.5">{q.name}</h4>
+                                                    <p className="text-slate-300 text-xs sm:text-sm leading-relaxed flex-grow">
+                                                        <strong className="text-slate-500 text-[10px] uppercase tracking-wider block mb-0.5">Kondisi / Trigger:</strong>
                                                         {q.desc}
                                                     </p>
                                                 </div>
@@ -449,7 +478,6 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                         
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 relative z-10">
                             {levelData.map((item, idx) => {
-                                // Mewarnai teks level agar mencolok
                                 const parts = item.split(' ');
                                 const levelTag = parts[0];
                                 const restText = parts.slice(1).join(' ');
@@ -467,13 +495,36 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                             })}
                         </div>
                     </div>
+
+                    {/* MODAL LIGHTBOX UNTUK GAMBAR */}
+                    {selectedImage && (
+                        <div 
+                            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm transition-opacity" 
+                            onClick={() => setSelectedImage(null)}
+                        >
+                            <div className="relative max-w-5xl w-full flex items-center justify-center zoom-in" onClick={e => e.stopPropagation()}>
+                                <button 
+                                    onClick={() => setSelectedImage(null)} 
+                                    className="absolute -top-10 right-0 sm:-right-10 w-8 h-8 flex items-center justify-center rounded-full bg-slate-800 text-slate-300 hover:text-rose-400 hover:bg-slate-700 transition-colors z-10 font-bold"
+                                >
+                                    ✖
+                                </button>
+                                <img 
+                                    src={selectedImage} 
+                                    alt="Quest Location" 
+                                    className="max-h-[85vh] w-auto max-w-full rounded-lg border border-slate-600 shadow-[0_0_30px_rgba(0,0,0,0.8)] object-contain"
+                                />
+                            </div>
+                        </div>
+                    )}
+
                 </div>
             );
         }
 
         // --- KOMPONEN UTAMA: TOOLHUB APP ---
         function ToolhubApp() {
-            const [activeTab, setActiveTab] = useState('calculator');
+            const [activeTab, setActiveTab] = useState('hidden_quests');
 
             return (
                 <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-800 via-indigo-950 to-slate-950 text-slate-200 font-sans selection:bg-amber-500/30 selection:text-amber-200">
@@ -483,7 +534,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="flex items-center justify-between h-16">
                                 {/* Logo */}
-                                <div className="flex items-center gap-2 cursor-pointer" onClick={() => setActiveTab('calculator')}>
+                                <div className="flex items-center gap-2 cursor-pointer" onClick={() => setActiveTab('hidden_quests')}>
                                     <span className="text-2xl drop-shadow-[0_0_10px_rgba(251,191,36,0.6)]">RO</span>
                                     <span className="text-lg font-black tracking-widest text-amber-400">TOOLHUB</span>
                                 </div>
@@ -491,16 +542,16 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                                 {/* Menu Navigasi */}
                                 <div className="flex gap-2 sm:gap-4">
                                     <button 
-                                        onClick={() => setActiveTab('calculator')}
-                                        className={`px-3 sm:px-4 py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 ${activeTab === 'calculator' ? 'bg-amber-500/20 text-amber-400 border border-amber-500/50 shadow-[0_0_15px_rgba(251,191,36,0.2)]' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 border border-transparent'}`}
-                                    >
-                                        🧮 Calculator
-                                    </button>
-                                    <button 
                                         onClick={() => setActiveTab('hidden_quests')}
                                         className={`px-3 sm:px-4 py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 ${activeTab === 'hidden_quests' ? 'bg-indigo-500/20 text-indigo-400 border border-indigo-500/50 shadow-[0_0_15px_rgba(99,102,241,0.2)]' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 border border-transparent'}`}
                                     >
                                         📜 Hidden Quests
+                                    </button>
+                                    <button 
+                                        onClick={() => setActiveTab('calculator')}
+                                        className={`px-3 sm:px-4 py-2 rounded-lg font-bold text-xs sm:text-sm transition-all duration-300 ${activeTab === 'calculator' ? 'bg-amber-500/20 text-amber-400 border border-amber-500/50 shadow-[0_0_15px_rgba(251,191,36,0.2)]' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 border border-transparent'}`}
+                                    >
+                                        🧮 Calculator
                                     </button>
                                 </div>
                             </div>
@@ -509,8 +560,8 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
                     {/* AREA KONTEN (Merender halaman berdasarkan tab yang aktif) */}
                     <div className="pt-6">
-                        {activeTab === 'calculator' && <ROOCCalculator />}
                         {activeTab === 'hidden_quests' && <HiddenQuestsPage />}
+                        {activeTab === 'calculator' && <ROOCCalculator />}
                     </div>
 
                 </div>
